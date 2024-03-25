@@ -1,0 +1,69 @@
+<!-- appointment.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Appointment - Bike Repair Hub</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Bike Repair Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Book Appointment Page Content -->
+        <h2>Book an Appointment</h2>
+
+        <section id="appointment-form">
+            <h3>Contact Information</h3>
+            <div id="successMessage" style="display: none;"></div>
+            <form id="appointmentForm" onsubmit="return submitAppointmentForm(event)">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Your Phone:</label>
+                <input type="tel" id="phone" required pattern="[0-9]{10}">
+
+                <h3>Preferred Service</h3>
+                <select id="service" required>
+                    <option value="">Select a service</option>
+                    <option value="tune-up">Bike Tune-up</option>
+                    <option value="flat-repair">Flat Tire Repair</option>
+                    <option value="gear-adjustment">Gear Adjustment</option>
+                    <option value="brake-maintenance">Brake Maintenance</option>
+                    <option value="chain-replacement">Chain Replacement</option>
+                </select>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+
+            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+            <p>Don't have an account yet? <a href="registration.html">Register here</a>.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2024 Bike Repair Hub. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!-- registration.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration - Bike Repair Hub</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Bike Repair Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Registration Page Content -->
+        
+        <section id="registration-form">
+            <h2>Register an Account</h2>
+            <div id="successMessage" style="display: none;"></div>
+            <form id="registerForm" onsubmit="return submitRegisterForm(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <small id="usernameError" class="error-message"></small>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <small id="emailError" class="error-message"></small>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <small id="passwordError" class="error-message"></small>
+
+                <button type="submit">Register</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Bike Repair Hub. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
